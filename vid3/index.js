@@ -6,6 +6,7 @@ const app = express();
 const Handlebars = handlebars.create({
   extname: '.html',
   partialsDir: './views/partials',
+  defaultLayout: null,
   helpers: {
     getStatus: function(cond) {
       if (!cond)
