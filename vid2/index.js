@@ -5,7 +5,8 @@ const express = require('express'),
 const app = express();
 
 const Handlebars = handlebars.create({
-  extname: '.html'
+  extname: '.html',
+  defaultLayout: null
 });
 
 app.engine('html', Handlebars.engine);
